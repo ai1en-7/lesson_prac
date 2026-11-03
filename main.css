@@ -1,0 +1,412 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f8fc;
+    color: #252b42;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 15px #00000008;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #303953;
+}
+
+.logo span {
+    color: #7785e8;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #596078;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #7785e8;
+}
+
+.score {
+    background: #f0f1ff;
+    padding: 12px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+main {
+    padding: 0 8%;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 90px 0;
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.tag {
+    color: #7785e8;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #7785e8;
+}
+
+.hero p {
+    color: #777f94;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    display: inline-block;
+    border: none;
+    background: #7885e8;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    background: #626fce;
+    transform: translateY(-3px);
+}
+
+.hero-card {
+    width: 320px;
+    height: 290px;
+    background: linear-gradient(135deg, #dfe5ff, #ede4ff);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 15px 40px #7785e820;
+}
+
+.math-icon {
+    font-size: 85px;
+    color: #7785e8;
+}
+
+.hero-card h2 {
+    font-size: 27px;
+    margin: 10px;
+}
+
+.hero-card p {
+    margin: 0;
+}
+
+.decoration {
+    margin-top: 20px;
+    color: #7885e8;
+    letter-spacing: 5px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.stat-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px #00000005;
+}
+
+.stat-card h2 {
+    font-size: 30px;
+    color: #7785e8;
+    margin-bottom: 8px;
+}
+
+.stat-card p {
+    color: #8990a3;
+    font-size: 14px;
+}
+
+.topics,
+.lesson,
+.practice {
+    padding: 85px 0 30px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+.section-title p {
+    color: #8990a3;
+    font-size: 14px;
+}
+
+.topic-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.topic-card {
+    background: white;
+    border-radius: 18px;
+    padding: 25px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.topic-card:hover {
+    transform: translateY(-5px);
+    border-color: #a5afff;
+    box-shadow: 0 10px 30px #7785e815;
+}
+
+.topic-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.topic-card h3 {
+    margin-bottom: 10px;
+}
+
+.topic-card p {
+    color: #8990a3;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.topic-card .open {
+    display: inline-block;
+    margin-top: 18px;
+    color: #7785e8;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.lesson-content {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    line-height: 1.9;
+    box-shadow: 0 5px 25px #00000005;
+}
+
+.lesson-content h3 {
+    margin: 15px 0 8px;
+}
+
+.example {
+    background: #f0f1ff;
+    padding: 18px;
+    border-radius: 12px;
+    margin-top: 15px;
+    color: #5865b6;
+}
+
+.empty {
+    text-align: center;
+    color: #8990a3;
+    padding: 30px;
+}
+
+.practice-card {
+    max-width: 650px;
+    margin: auto;
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px #00000008;
+}
+
+.question-top {
+    display: flex;
+    justify-content: space-between;
+    color: #7785e8;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.question {
+    background: #f5f6ff;
+    padding: 35px 15px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.question h2 {
+    font-size: 28px;
+}
+
+#answer {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #e0e3ef;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+}
+
+#answer:focus {
+    border-color: #7785e8;
+}
+
+#feedback {
+    min-height: 30px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.practice-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.next-btn {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #edf0ff;
+    color: #6572ce;
+    cursor: pointer;
+}
+
+.progress {
+    height: 8px;
+    background: #edf0f5;
+    border-radius: 10px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0%;
+    background: #7885e8;
+    transition: 0.3s;
+}
+
+.progress-text {
+    text-align: center;
+    color: #8990a3;
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+footer {
+    margin-top: 90px;
+    background: white;
+    text-align: center;
+    padding: 35px;
+    color: #8990a3;
+    line-height: 2;
+    font-size: 13px;
+}
+
+footer .logo {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 12px;
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+
+    main {
+        padding: 0 5%;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero-card {
+        width: 100%;
+    }
+
+    .topic-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .practice-card {
+        padding: 20px;
+    }
+
+    .practice-buttons {
+        flex-direction: column;
+    }
+}

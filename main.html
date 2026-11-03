@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathLab — Изучай математику</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">Math<span>Lab.</span></div>
+
+        <nav>
+            <a href="#home">Главная</a>
+            <a href="#topics">Темы</a>
+            <a href="#practice">Практика</a>
+        </nav>
+
+        <div class="score">
+            ⭐ <span id="score">0</span> баллов
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+            <div class="hero-text">
+                <span class="tag">ТВОЯ МАТЕМАТИЧЕСКАЯ ПЛАТФОРМА</span>
+
+                <h1>Математика может быть <span>интересной!</span></h1>
+
+                <p>
+                    Изучай новые темы, решай интерактивные задания
+                    и проверяй свои знания.
+                </p>
+
+                <a href="#topics" class="main-btn">
+                    Начать обучение →
+                </a>
+            </div>
+
+            <div class="hero-card">
+                <div class="math-icon">∑</div>
+                <h2>MathLab</h2>
+                <p>Твой путь к математике</p>
+                <div class="decoration">＋　×　÷　＝</div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="stat-card">
+                <h2>05</h2>
+                <p>Тем обучения</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="completed">0</h2>
+                <p>Изучено тем</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="total-score">0</h2>
+                <p>Набрано баллов</p>
+            </div>
+        </section>
+
+        <section class="topics" id="topics">
+            <div class="section-title">
+                <span class="tag">ОБУЧЕНИЕ</span>
+                <h2>Выбери свою тему</h2>
+                <p>Изучай материал и закрепляй знания на практике.</p>
+            </div>
+
+            <div class="topic-grid" id="topic-list"></div>
+        </section>
+
+        <section class="lesson" id="lesson">
+            <div class="section-title">
+                <span class="tag">ТЕОРИЯ</span>
+                <h2 id="lesson-title">Выбери тему для изучения</h2>
+                <p id="lesson-description">
+                    Здесь появится материал выбранной темы.
+                </p>
+            </div>
+
+            <div class="lesson-content" id="lesson-content">
+                <div class="empty">
+                    📚 Выбери одну из пяти тем выше.
+                </div>
+            </div>
+        </section>
+
+        <section class="practice" id="practice">
+            <div class="section-title">
+                <span class="tag">ПРОВЕРЬ СЕБЯ</span>
+                <h2>Время практики!</h2>
+                <p>Решай задания и зарабатывай баллы.</p>
+            </div>
+
+            <div class="practice-card">
+
+                <div class="question-top">
+                    <span id="question-topic">Математика</span>
+                    <span id="question-number">Задание 1</span>
+                </div>
+
+                <div class="question">
+                    <h2 id="question">Нажми кнопку, чтобы начать!</h2>
+                </div>
+
+                <input
+                    type="text"
+                    id="answer"
+                    placeholder="Введи свой ответ..."
+                >
+
+                <p id="feedback"></p>
+
+                <div class="practice-buttons">
+                    <button id="check-btn" class="main-btn">
+                        Проверить ответ
+                    </button>
+
+                    <button id="next-btn" class="next-btn">
+                        Следующее →
+                    </button>
+                </div>
+
+                <div class="progress">
+                    <div id="progress-bar"></div>
+                </div>
+
+                <p class="progress-text">
+                    Прогресс: <span id="progress-count">0</span> / 5
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="logo">Math<span>Lab.</span></div>
+        <p>Учись с интересом. Развивай свои способности.</p>
+        <p>© 2026 MathLab</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
